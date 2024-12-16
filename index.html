@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="icon" href="splize.png" type="image/png">
     <style>
         * {
             margin: 0;
@@ -288,6 +289,25 @@
             distance: '50px', 
             origin: 'bottom',
             easing: 'cubic-bezier(0.5, 0, 0, 1)'
+        });
+        // Mencegah pengguna membuka inspector melalui shortcut
+        window.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+            event.preventDefault();
+            alert('\u26A0\uFE0F  Hacker, jangan meretas!  \u26A0\uFE0F');
+        }
+        });
+
+        // Mencegah pengguna membuka inspector melalui klik kanan
+        document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+        alert('\u26A0\uFE0F  Hacker, jangan meretas!  \u26A0\uFE0F');
+        });
+
+        document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.key === 'u') {
+            event.preventDefault();
+        }
         });
     </script>
 </body>
