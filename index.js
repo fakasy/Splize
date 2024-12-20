@@ -1,7 +1,6 @@
 
-<script>
+ src="splize.html"
 
-    document.write('<script src="splize.html"><\/script>');
 
 // Security measures
 window.addEventListener('keydown', function(event) {
@@ -22,4 +21,4 @@ document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
     alert('Access Denied');
 });
-</script>
+
