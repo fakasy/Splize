@@ -21,3 +21,4 @@ document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
     alert('Access Denied');
 });
+</script>
