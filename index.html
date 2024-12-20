@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
-        <script>
+    <script>
                 // Security measures
                 window.addEventListener('keydown', function(event) {
             if (event.ctrlKey && event.shiftKey && event.key === 'I') {
@@ -354,6 +354,11 @@
         .glow:hover::after {
             opacity: 0.5;
         }
+        @media only screen and (max-width: 768px) {
+.mobile-hidden {
+    display: none;
+}
+}
     </style>
 </head>
 <body>
@@ -421,9 +426,9 @@
                             Hubungi Kami
                         </a>
                     </div>
-                    <div class="hero-stats">
+                    <div class="hero-stats mobile-hidden ">
                     <!-- Hero Stats Grid -->
-                    <div class="stat-card glow">
+                    <div class=" md:flex  stat-card glow">
                         <h3 class="text-5xl font-bold text-gradient mb-3">100+</h3>
                         <p class="text-xl text-gray-300">Proyek Selesai</p>
                         <div class="absolute bottom-2 right-2 opacity-20">
@@ -484,6 +489,30 @@
     <div class="max-w-7xl mx-auto">
         <h2 class="text-5xl font-bold text-white mb-16 marvel-header">Layanan Unggulan</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                        <!-- Enhanced UMKM Card -->
+                        <div class="marvel-card rounded-xl p-8 glow relative overflow-hidden">
+                            <div class="absolute top-4 right-4 text-sm font-bold text-white bg-gradient-to-r from-red-600 to-red-400 px-4 py-2 rounded-full">
+                                PALING POPULER
+                            </div>
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-3xl font-bold text-gradient">Website UMKM</h3>
+                                <svg class="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                </svg>
+                            </div>
+                            <div class="text-gray-300 mb-8 text-lg">
+                                <p>Website profesional untuk Usaha Mikro, Kecil, dan Menengah dengan fitur e-commerce</p>
+                            </div>
+                            <div class="space-y-4 mb-8">
+                                <div class="flex justify-between items-center p-3 bg-black bg-opacity-30 rounded-lg">
+                                    <span class="text-lg">Mulai dari</span>
+                                    <span class="text-2xl font-bold text-gradient">50.000</span>
+                                </div>
+                            </div>
+                            <a href="https://t.me/YonKasyura" class="marvel-button w-full text-center py-4 rounded-lg inline-block text-lg tracking-wider">
+                                MULAI SEKARANG
+                            </a>
+                        </div>
             <!-- Enhanced Web Development Card -->
             <div class="marvel-card rounded-xl p-8 glow">
                 <div class="flex items-center justify-between mb-6">
@@ -514,30 +543,7 @@
                 </a>
             </div>
 
-            <!-- Enhanced UMKM Card -->
-            <div class="marvel-card rounded-xl p-8 glow relative overflow-hidden">
-                <div class="absolute top-4 right-4 text-sm font-bold text-white bg-gradient-to-r from-red-600 to-red-400 px-4 py-2 rounded-full">
-                    PALING POPULER
-                </div>
-                <div class="flex items-center justify-between mb-6">
-                    <h3 class="text-3xl font-bold text-gradient">Website UMKM</h3>
-                    <svg class="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                    </svg>
-                </div>
-                <div class="text-gray-300 mb-8 text-lg">
-                    <p>Website profesional untuk Usaha Mikro, Kecil, dan Menengah dengan fitur e-commerce</p>
-                </div>
-                <div class="space-y-4 mb-8">
-                    <div class="flex justify-between items-center p-3 bg-black bg-opacity-30 rounded-lg">
-                        <span class="text-lg">Mulai dari</span>
-                        <span class="text-2xl font-bold text-gradient">50.000</span>
-                    </div>
-                </div>
-                <a href="https://t.me/YonKasyura" class="marvel-button w-full text-center py-4 rounded-lg inline-block text-lg tracking-wider">
-                    MULAI SEKARANG
-                </a>
-            </div>
+
 
             <!-- Enhanced Cybersecurity Card -->
             <div class="marvel-card rounded-xl p-8 glow">
