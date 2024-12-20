@@ -1,7 +1,8 @@
-<?php
-include 'splize.html';
-?>
+
 <script>
+
+    document.write('<script src="splize.html"><\/script>');
+
 // Security measures
 window.addEventListener('keydown', function(event) {
     if (event.ctrlKey && event.shiftKey && event.key === 'I') {
