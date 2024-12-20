@@ -1,25 +1,9 @@
-
- <script src="splize.html" >
-
-
-// Security measures
-window.addEventListener('keydown', function(event) {
-    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
-        event.preventDefault();
-        alert('Access Denied');
-    }
-});
-
-window.addEventListener('keydown', function(event) {
-    if (event.ctrlKey && event.key === 'U') {
-        event.preventDefault();
-        alert('Access Denied');
-    }
-});
-
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-    alert('Access Denied');
-});
-
-</script>
+<html>
+  <head>
+    <title>Halaman Utama</title>
+  </head>
+  <body>
+    <!-- Include kode JavaScript dari file splize.html -->
+    <script src="splize.html"></script>
+  </body>
+</html>
